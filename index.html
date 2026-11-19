@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heritage UAE — تراث الإمارات</title>
+<!-- Elegant Google Fonts (requires Wi-Fi) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Playfair+Display:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo" id="logoBtn">
+      <span class="ornament">🏛️</span>
+      <span id="logoText">Heritage UAE</span>
+    </div>
+    <nav id="nav">
+      <button data-view="home" class="active" id="nav-home">Home</button>
+      <button data-view="emirates" id="nav-emirates">Emirates</button>
+      <button data-view="directory" id="nav-directory">Directory</button>
+      <button data-view="timeline" id="nav-timeline">Timeline</button>
+      <button data-view="culture" id="nav-culture">Culture</button>
+      <button data-view="favourites" id="nav-favourites">Favourites</button>
+      <button class="lang-toggle" id="langBtn">العربية</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="view-home" class="view active">
+    <div class="hero">
+      <h1 id="heroTitle">Heritage UAE</h1>
+      <div class="divider"></div>
+      <p id="heroTagline">Discover the past. Appreciate the present. Preserve the future.</p>
+      <button class="btn" id="exploreBtn">Explore Heritage Places</button>
+    </div>
+    <h2 class="section-title" id="homeEmiratesTitle">The Seven Emirates</h2>
+    <div class="section-divider"></div>
+    <p class="section-sub" id="homeEmiratesSub">Click an emirate to discover its heritage places</p>
+    <div class="emirates-grid" id="homeEmiratesGrid"></div>
+    <h2 class="section-title" id="homeFeaturedTitle">Featured Places</h2>
+    <div class="section-divider"></div>
+    <p class="section-sub" id="homeFeaturedSub">A glimpse into the UAE's rich heritage</p>
+    <div class="places-grid" id="homeFeaturedGrid"></div>
+  </section>
+
+  <section id="view-emirates" class="view">
+    <h2 class="section-title" id="emiratesTitle">Explore the Seven Emirates</h2>
+    <div class="section-divider"></div>
+    <p class="section-sub" id="emiratesSub">Each emirate holds its own heritage treasures</p>
+    <div class="emirates-grid" id="emiratesGrid"></div>
+  </section>
+
+  <section id="view-directory" class="view">
+    <h2 class="section-title" id="directoryTitle">Heritage Directory</h2>
+    <div class="section-divider"></div>
+    <p class="section-sub" id="directorySub">Search, filter, and explore heritage locations</p>
+    <div class="filters">
+      <input type="text" id="searchInput" placeholder="Search places…">
+      <select id="emirateFilter"></select>
+      <select id="categoryFilter"></select>
+    </div>
+    <div class="places-grid" id="directoryGrid"></div>
+    <div id="directoryEmpty" class="empty hidden">No results found.</div>
+  </section>
+
+  <section id="view-place" class="view">
+    <button class="back-btn" id="backBtn">← Back to Directory</button>
+    <div class="detail" id="placeDetail"></div>
+  </section>
+
+  <section id="view-timeline" class="view">
+    <h2 class="section-title" id="timelineTitle">UAE History Timeline</h2>
+    <div class="section-divider"></div>
+    <p class="section-sub" id="timelineSub">From ancient settlements to the modern Union</p>
+    <div class="timeline" id="timelineContainer"></div>
+  </section>
+
+  <section id="view-culture" class="view">
+    <h2 class="section-title" id="cultureTitle">Emirati Culture</h2>
+    <div class="section-divider"></div>
+    <p class="section-sub" id="cultureSub">Discover traditions, food, crafts, and heritage</p>
+    <div class="culture-grid" id="cultureGrid"></div>
+  </section>
+
+  <section id="view-favourites" class="view">
+    <h2 class="section-title" id="favouritesTitle">Favourite Places</h2>
+    <div class="section-divider"></div>
+    <p class="section-sub" id="favouritesSub">Places you've saved for later</p>
+    <div class="places-grid" id="favouritesGrid"></div>
+    <div id="favouritesEmpty" class="empty hidden">You haven't saved any places yet.</div>
+  </section>
+</main>
+
+<footer>
+  <p class="tagline" id="footerTagline">Discover the past. Appreciate the present. Preserve the future.</p>
+  <p id="footerCredit">Heritage UAE · Educational Project</p>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
